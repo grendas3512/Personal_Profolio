@@ -2,27 +2,58 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
-nav {
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+cursor: pointer;
+color:hsl(136, 0%, 17%);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-align: -webkit-match-parent;
+  }
+
+.navbar {
     display: flex;
     justify-content: flex-end;
     position: fixed;
+    top:0;
+    left:0;
     width: 100%;
     z-index: 10;
-    background-color: 0, 41%, 38%;
+    background-color:hsl(136, 0%, 17%);
 }
-
-welcome-section {
+.nav-list a{
+    display:block;
+    font-size: 2.2rem;
+    padding:2rem;
+}
+.nav-list{
+    display:flex;
+    margin:2rem;
+}
+.nav-list a:hover{
+    background:hsl(55, 94%, 66%);
+}
+.welcome-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height:100vh;
-    background: hsla(219, 84%, 44%, 1);
-    background: linear-gradient(45deg, hsla(219, 84%, 44%, 1) 0%, hsla(0, 0%, 4%, 1) 100%);
-    background: -moz-linear-gradient(45deg, hsla(219, 84%, 44%, 1) 0%, hsla(0, 0%, 4%, 1) 100%);
-    background: -webkit-linear-gradient(45deg, hsla(219, 84%, 44%, 1) 0%, hsla(0, 0%, 4%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#1254CF", endColorstr="#0B0B0B", GradientType=1);
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(250,236,87,1) 100%);
 }
