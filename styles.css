@@ -7,53 +7,133 @@ body {
     line-height: 1.4;
 }
 
-a{
+h1 {
+    font-weight: 600;
+    color: white;
+}
+
+h2 {
+    font-size: 2.7rem;
+    display: block;
+    color: white;
+}
+
+.welcome-h1 {
+    font-weight: 600;
+    color: white;
+
+}
+
+.welcome-h1 :hover {}
+
+.welcome-p {
+    color: hsl(55, 94%, 66%);
+    text-shadow: 0px 0px 26px rgba(248, 231, 37, 1);
+}
+
+a {
     text-decoration: none;
-    color:white;
+    color: white;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
-a:hover{
-cursor: pointer;
-color:hsl(136, 0%, 17%);
+a:hover {
+    cursor: pointer;
+    color: hsl(136, 0%, 17%);
+    text-shadow: none;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-li{
+li {
     text-align: -webkit-match-parent;
-  }
+}
 
 .navbar {
     display: flex;
     justify-content: flex-end;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     z-index: 10;
-    background-color:hsl(136, 0%, 17%);
+    background-color: hsl(136, 0%, 17%);
+    background: linear-gradient(45deg, rgba(50, 50, 50, 0) 0%, rgba(6, 6, 6, 0) 100%);
 }
-.nav-list a{
-    display:block;
-    font-size: 2.2rem;
-    padding:2rem;
+
+.nav-list a {
+    display: block;
+    height: 50%;
+    padding: 0.7em;
 }
-.nav-list{
-    display:flex;
-    margin:2rem;
+
+.nav-list {
+    display: flex;
+    margin: 0;
 }
-.nav-list a:hover{
-    background:hsl(55, 94%, 66%);
+
+.nav-list a:hover {
+    background: hsl(55, 94%, 66%);
+    box-shadow: 0px 10px 29px -13px rgba(248, 231, 37, 0.8);
+    -webkit-box-shadow: 0px 10px 29px -13px rgba(248, 231, 37, 0.8);
+    -moz-box-shadow: 0px 10px 29px -13px rgba(248, 231, 370.8);
 }
+
 .welcome-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height:100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(250,236,87,1) 100%);
+    height: 100vh;
+    background: rgb(80, 80, 80);
+    background: linear-gradient(45deg, rgba(80, 80, 80, 1) 0%, rgba(6, 6, 6, 1) 100%);
+}
+
+.project-h2 {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid hsl(55, 94%, 66%);
+}
+
+.yellow-text {
+    color: hsl(55, 94%, 66%);
+    text-shadow: 0px 0px 26px rgba(248, 231, 37, 1);
+}
+
+.project-section {
+    background-color: #121212;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 3rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background: gray;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
 }
