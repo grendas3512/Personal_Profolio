@@ -24,8 +24,6 @@ h2 {
 
 }
 
-.welcome-h1 :hover {}
-
 .welcome-p {
     color: hsl(55, 94%, 66%);
     text-shadow: 0px 0px 26px rgba(248, 231, 37, 1);
@@ -136,4 +134,25 @@ li {
 .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
+}
+.contact-section{
+    background-color: #414141;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+}
+.contact-links{
+    font-size: large;
+}
+.btn {
+  margin:0.8em;
+}
+.contact-p{
+   color: hsl(55, 94%, 66%);
+    text-shadow: 0px 0px 26px         rgba(248, 231, 37, 1);
 }
